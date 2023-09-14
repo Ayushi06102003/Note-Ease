@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Oxygen:wght@300&display=swap');
+:root{
+    
+  --primaryColor: #fed9f4f6;
+  --secondarycolor: #5c5a5c;
+  --primaryText: #f9e1f2;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comic Neue', cursive;
+  font-family: 'Oxygen', sans-serif;
+}
+body{
+  background: var(--primaryColor);
+}
+.wrapper{
+  margin: 50px;
+  display: grid;
+  gap: 2.5%;
+  grid-template-columns: repeat(auto-fill, 265px);
+}
+.wrapper li{
+  height: 250px;
+  list-style: none;
+  background: var(--secondarycolor);
+  border-radius: 5%;
+  padding: 15px 20px 20px;
+}
+.add-box, .icon, .bottom-content, .popup, header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-box{
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.add-box .icon{
+  height: 88px;
+  width: 88px;
+  font-size: 60px;
+  justify-content: center;
+  color: var(--primaryText);
+}
+.add-box p{
+  color: var(--primaryText);
+  font-weight: 500;
+  margin-top: 20px;
+}
+.wrapper .note{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.note p{
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--primaryColor);
+}
+.note span{
+  display: block;
+  margin-top: 5px;
+  color: var(--primaryText);
+  font-size: 16px;
+}
+.bottom-content span{
+  color: var(--primaryText);
+  font-size: 14px;
+}
+.bottom-content .settings i{
+  color: var(--primaryText);
+  font-size: 15px;
+  cursor: pointer !important;
+  padding: 0 10px;
+  
+  
+}
+.popup-box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 2;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.popup-box .popup{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  max-width: 400px;
+  width: 100%;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+.popup-box, .popup-box .popup{
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease;
+  z-index: -1;
+}
+.popup-box.show, .popup-box .popup{
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 3;
+}
+.popup .content{
+  width: calc(100% - 15px);
+  border-radius: 5px;
+  background: #fff;
+}
+.popup .content header{
+  padding: 15px 25px;
+  border-bottom: 1px solid #ccc;
+}
+.content header p{
+  font-size: 20px;
+  font-weight: 500;
+}
+.content header i{
+  color: #575757;
+  cursor: pointer;
+  font-size: 20px;
+}
+.content form{
+  margin: 15px 25px 35px;
+}
+.content form .row{
+  margin-bottom: 20px;
+}
+form .row label{
+  display: block;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.content form :where(input, textarea) {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  font-size: 17px;
+  padding: 0 15px;
+  border-radius: 4px;
+  border: 1px solid #999;
+}
+
+
+.content form textarea{
+  height: 150px;
+  padding: 8px 15px;
+  resize: none;
+}
+.content form button{
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 17px;
+  background: var(--primaryColor);
+}
+
+body{
+  color: black;
+  background-color: rgb(250, 194, 235);
+  text-align: center;
+  justify-content: center;
+}
+.dark-class {
+  color: white;
+  background-color: rgb(12, 10, 10);
+}
+p {
+  font-size: 1.2rem;
+}
+.toggleButton {
+  width: 5rem;
+  height: 2rem;
+  position: relative;
+  display: inline-block;
+}
+.toggleButton input {
+  opacity: 0;
+}
+.roundButton {
+  background-color: white;
+  top: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.roundButton:before {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  background-color: #5c5a5c;
+  transition: 1s;
+  height: 2rem;
+  width: 2rem;
+}
+input:checked+.roundButton {
+  background-color: white;
+}
+input:checked+.roundButton:before {
+  transform: translateX(3rem);
+}
+.roundButton.circle {
+  border-radius: 2rem;
+}
+.roundButton.circle:before {
+  border-radius: 50%;
+}
+.theme{
+   text-align:end;
+   padding-right: 5%;
+}
+
+.lbl{
+  color: black;
+}

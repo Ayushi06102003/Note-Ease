@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="faviconNotes.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Luckiest+Guy&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <title>Note Ease</title>
+     <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+     Integrity = "sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+     crossorigin = "anonymous" referrerpolicy = "no-referrer"> </script>
+</head>  
+<body>
+    <h1 style="text-align: center; text-decoration: wavy; background-color: #5c5a5c; color: #f9e1f2; font-size: 300%; font-family: 'Luckiest Guy', cursive;">Note Ease</h1>
+    <div class="theme">
+    <p>Theme</p>
+   <label class = "toggleButton">
+      <input type = "checkbox" id = "toggle">
+      <div class = "roundButton circle" ></div>
+   </label>
+</div>
+<div class="popup-box">
+    <div class="popup">
+        <div class="content">
+            <header>
+                <p class="lbl">Add a new note</p>
+                <i class="uil uil-times"></i>
+            </header>
+            <form action="#">
+                <div class="row title">
+                    <label class="lbl" for="">Title</label>
+                    <input type="text">
+                </div>
+                <div class="row description">
+                    <label class="lbl" for="">Description</label>
+                    <textarea></textarea>
+                </div>
+                <button>Add Note</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <div class="wrapper">
+        <li class="add-box">
+            <div class="icon">
+                <i class="uil uil-file-plus-alt"></i>
+            </div>
+        </li>
+    </div>
+   
+   <script>
+      // If the input checkbox is checked, activate dark mode by adding dark-class to the body
+      $('#toggle').change(() => {
+         if ($('#toggle').is(":checked")) {
+            $("body").addClass("dark-class");
+            // $("body").removeClass("light-class");
+
+
+         } else {
+            $("body").removeClass("dark-class")
+            // $("body").addClass("light-class")
+         }
+      })
+   </script>
+    <script src="main.js"></script>
+</body>
+</html>
