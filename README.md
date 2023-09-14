@@ -1,7 +1,7 @@
 # Note Ease
 ## Introduction
 
-Introducing our innovative notes app, designed to streamline your organization and productivity. With a user-friendly interface, it allows you to create, edit, and delete notes effortlessly. Say goodbye to cluttered notebooks and embrace a smarter way to manage your thoughts and ideas. This app is created using HTML, CSS, and JavaScript and is perfect jottting down notes and ideas quickly and easily.
+Introducing this innovative notes app, designed to streamline your organization and productivity. With a user-friendly interface, it allows you to create, edit, and delete notes effortlessly. Say goodbye to cluttered notebooks and embrace a smarter way to manage your thoughts and ideas. This app is created using HTML, CSS, and JavaScript and is perfect jottting down notes and ideas quickly and easily.
 
 ## Preview
 ## Light Mode:
