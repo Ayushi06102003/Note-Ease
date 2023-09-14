@@ -33,6 +33,7 @@ This app can be deployed in two ways:
 2. Open the index.html file in a web browser
 3. Create, edit, and delete notes using the app
 4. Option to save and access notes at a later time
+5. Checkout the web application through the link- https://ayushi06102003.github.io/Note-Ease/
 
 ## Conclusion
 
